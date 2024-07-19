@@ -11,9 +11,9 @@ const ItemForm = ({ item, onSuccess }) => {
     const [birthday, setBirthday] = useState('');
     const [birthplace, setBirthPlace] = useState('');
     const [age, setAge] = useState('');
-    const [gender, setGender] = useState('');
-    const [nationality, setNationality] = useState('');
-    const [civil_status, setCivilStatus] = useState('');
+    const [sexuality, setSexuality] = useState('');
+    const [province, setProvince] = useState('');
+    const [talent, setTalent] = useState('');
     const [religion, setReligion] = useState('');
     const [height_CM, setHeight] = useState('');
     const [weight_KG, setWeight] = useState('');
@@ -40,9 +40,9 @@ const ItemForm = ({ item, onSuccess }) => {
             setBirthday(item.birthday);
             setBirthPlace(item.birth_place);
             setAge(item.age);
-            setGender(item.gender);
-            setNationality(item.nationality);
-            setCivilStatus(item.civil_status);
+            setSexuality(item.sexuality);
+            setProvince(item.province);
+            setTalent(item.talent);
             setReligion(item.religion);
             setHeight(item.height_CM);
             setWeight(item.weight_KG);
@@ -71,9 +71,9 @@ const ItemForm = ({ item, onSuccess }) => {
             birthday,
             birthplace,
             age,
-            gender,
-            nationality,
-            civil_status,
+            sexuality,
+            province,
+            talent,
             religion,
             height_CM,
             weight_KG,
@@ -142,16 +142,16 @@ const ItemForm = ({ item, onSuccess }) => {
                 <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
             </div>
             <div>
-                <label>Gender:</label>
-                <input type="text" value={gender} onChange={(e) => setGender(e.target.value)} />
+                <label>Sexuality:</label>
+                <input type="text" value={sexuality} onChange={(e) => setSexuality(e.target.value)} />
             </div>
             <div>
-                <label>Nationality:</label>
-                <input type="text" value={nationality} onChange={(e) => setNationality(e.target.value)} />
+                <label>Province:</label>
+                <input type="text" value={province} onChange={(e) => setProvince(e.target.value)} />
             </div>
             <div>
-                <label>Civil Status:</label>
-                <input type="text" value={civil_status} onChange={(e) => setCivilStatus(e.target.value)} />
+                <label>Talent:</label>
+                <input type="text" value={talent} onChange={(e) => setTalent(e.target.value)} />
             </div>
             <div>
                 <label>Religion:</label>
